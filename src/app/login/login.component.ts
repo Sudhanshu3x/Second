@@ -34,6 +34,11 @@ msg='';
      
      )
   }
+  gotodetails()
+  {
+    this._router.navigate(['/details']) 
+
+  }
   gotoregistration()
   {
     this._router.navigate(['/registration']) 

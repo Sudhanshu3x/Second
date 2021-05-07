@@ -9,6 +9,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { DetailsComponent } from './details/details.component'
 import { HttpClientModule } from '@angular/common/http';
 import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
+import { SuccessComponent } from './success/success.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
     LoginComponent,
     RegistrationComponent,
     DetailsComponent,
-    LoginsuccessComponent
+    LoginsuccessComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule,
