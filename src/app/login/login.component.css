@@ -1,0 +1,7 @@
+.background { 
+    background-color: burlywood;
+  }
+  #content1::after{
+    content: "\a";
+    white-space: pre;
+}

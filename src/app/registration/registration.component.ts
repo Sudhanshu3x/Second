@@ -31,7 +31,10 @@ export class RegistrationComponent implements OnInit {
    }
       
     }
-
+    gotosuccess()
+    {
+      this._router.navigate(['/success']);
+    }
    
   
 

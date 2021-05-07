@@ -4,6 +4,7 @@ import { from } from 'rxjs';
 import { LoginComponent } from './login/login.component';
 import { LoginsuccessComponent } from './loginsuccess/loginsuccess.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { SuccessComponent } from './success/success.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,10 @@ const routes: Routes = [
   },
   {
   path:'login',component:LoginComponent
-  }
+  },
+  {
+    path:'success',component:SuccessComponent
+    }
 ];
 
 @NgModule({
