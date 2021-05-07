@@ -1,3 +1,4 @@
+<div style="background-image: url('index.jpg')"> 
 <div class="container ">
 <h2 class="textual">Registration Page</h2>
 <form #registrationinform="ngForm" (ngSubmit)="registerUser()">
@@ -5,15 +6,19 @@
     <div class="form-group">
         <br>
       <label for="email" class="col-sm-2 col-form-label">Username:</label>
-      <input type="email"   placeholder="Username" [(ngModel)]="user.Username" required #email="ngModel" 
+      <input type="email"   placeholder="@email" [(ngModel)]="user.Username" required #email="ngModel" 
       [class.is-invalid]="email.invalid  && email.touched"
       >
+      <small class="text-danger" [class.d-none]="email.valid  || email.untouched">Username is required field</small>
+
 </div>
     
     <div class="form-group">
       <label for="pwd" class="col-sm-2 col-form-label">Password:</label>
-      <input type="password"   placeholder="password" [(ngModel)]="user.Password" #password="ngModel" required
+      <input type="password"   placeholder="Password" [(ngModel)]="user.Password" #password="ngModel" required
       [class.is-invalid]="password.invalid  && password.touched">
+      <small class="text-danger" [class.d-none]="password.valid  || password.untouched">Password is required field</small>
+
 </div>
 <div class="form-group">
   <label for="name" class="col-sm-2 col-form-label">First Name:</label>
