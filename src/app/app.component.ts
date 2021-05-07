@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'moglix-first-project';
+  getValues(val)
+  {
+    console.warn(val);
+  }
 }
